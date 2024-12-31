@@ -1,8 +1,7 @@
-Link: https://marisaoj.com/problem/17
+// Link: https://marisaoj.com/problem/17
 
-Calculate the sum of positive divisors of given integer $n$.
+// Calculate the sum of positive divisors of given integer $n$.
 
-```cpp
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -24,4 +23,3 @@ int main() {
 	cin >> n;
 	cout << summ(n);
 }
-```
