@@ -8,7 +8,7 @@
 - Gọi z là số cặp mà bit 0 của `a` tương ứng với bit 1 của `b` ở vị trí `k` trong biểu diễn nhị phân.
 - Số bit 1 của `a` khi đó là `x + y`.
 - Số bit 1 của `b` khi đó là `x + z`.
-- Số bit 1 của `c` khi đó là `y + z`.
+- Số bit 1 của `c` khi đó là `y + z`. Do `1 XOR 1 = 0`, `1 XOR 0 = 1` và `0 XOR 1 = 1` nên kết quả của các cặp `x` là 0, trong khi kết quả của các cặp `y` và `z` là 1.
 
 #### TH1: số bit 1 của `a` và `b` cùng lẻ.
 - Vì `a` lẻ nên `x + y` lẻ tương tự `x + z` lẻ, suy ra `x + y + x + z` chẵn.
