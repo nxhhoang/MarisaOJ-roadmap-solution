@@ -8,7 +8,7 @@
 - Let `z` be the number of pairs where the `0` bit of `a` corresponds to the `1` bit of `b` at position `k`.
 - The number of `1` bits in `a` is `x + y`.
 - The number of `1` bits in `b` is `x + z`.
-- The number of `1` bits in `c` is `y + z`.
+- The number of `1` bits in `c` is `y + z`. We have `1 XOR 1 = 0`, `1 XOR 0 = 1` và `0 XOR 1 = 1` then the results of `x` pairs are 0, while those `y` và `z` pairs are 1.
 
 #### Case 1: The number of `1` bits in both `a` and `b` is odd.
 - Since `a` is odd, `x + y` is odd. Similarly, `x + z` is odd, which implies `x + y + x + z` is even.
