@@ -29,6 +29,14 @@ F(1, n - 1) + A_n, & \text{if } n\text{ is odd} \newline
 F(1, n - 1).\overline{A_n} , & \text{if } n\text{ is even} 
 \end{cases} 
 $$
+$$
+F(1, n) = 
+\begin{cases} 
+A_1, & \text{if } n == 1 \newline
+F(1, n - 1) + A_n, & \text{if } n \text{ is odd} \newline
+F(1, n - 1).\overline{A_n}, & \text{if } n \text{ is even}
+\end{cases}
+$$
 
 ### Code C++
 ```cpp
