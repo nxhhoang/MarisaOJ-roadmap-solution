@@ -21,14 +21,8 @@
 - Next: $F(1, 4) = (A_1.\overline{A_2} + A_3).\overline{A_4}$.
 
 - Using mathematical induction, we can derive the following recurrence formula:
-$$ 
-F(1, n) = 
-\begin{cases} 
-A_1, &\text{if } n == 1 \newline
-F(1, n - 1) + A_n, & \text{if } n\text{ is odd} \newline 
-F(1, n - 1).\overline{A_n} , & \text{if } n\text{ is even} 
-\end{cases} 
-$$
+![image](https://github.com/user-attachments/assets/5f5e1406-5a67-4862-8d3b-c6836ec4742c)
+
 
 ### C++ Code
 ```cpp
