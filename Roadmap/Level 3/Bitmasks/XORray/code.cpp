@@ -1,4 +1,4 @@
-// nxxhoang - the dreamer
+// nxhhoang - the dreamer
 #include <bits/stdc++.h>
 #define FOR(i, a, b) for (int i = a; i < (int)b; i++)
 #define endl '\n'
