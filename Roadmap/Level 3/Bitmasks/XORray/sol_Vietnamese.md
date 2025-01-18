@@ -21,22 +21,7 @@
 - Tiếp tục: $F(1, 4) = (A_1.\overline{A_2} + A_3).\overline{A_4}$.
 
 - Bằng phép quy nạp dễ dàng xây dựng được công thức truy hồi như sau:
-$$ 
-F(1, n) = 
-\begin{cases} 
-A_1, &\text{if } n == 1 \newline
-F(1, n - 1) + A_n, & \text{if } n\text{ is odd} \newline 
-F(1, n - 1).\overline{A_n} , & \text{if } n\text{ is even} 
-\end{cases} 
-$$
-$$
-F(1, n) = 
-\begin{cases} 
-A_1, & \text{if } n == 1 \newline
-F(1, n - 1) + A_n, & \text{if } n \text{ is odd} \newline
-F(1, n - 1).\overline{A_n}, & \text{if } n \text{ is even}
-\end{cases}
-$$
+![image](https://github.com/user-attachments/assets/9d1bc043-abe4-4557-8c08-ffa265a80dd6)
 
 ### Code C++
 ```cpp
