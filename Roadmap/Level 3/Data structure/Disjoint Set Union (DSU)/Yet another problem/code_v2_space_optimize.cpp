@@ -52,7 +52,6 @@ void solve() {
     vector<pii> sortt(n);
     vector<int> roirac(n);
     vector<pii> used(n);
-    vector<int> value(n);
 
     FOR(i, 0, n) cin >> a, sortt[i] = {a, i};
     sort(all(sortt));
