@@ -28,19 +28,19 @@ void solve() {
     cin >> n >> q;
 
     vector<ll> a(MAXSIZE, 0);
-	FOR(i, 1, n + 1) cin >> a[i], a[i] += a[i - 1];
+    FOR(i, 1, n + 1) cin >> a[i], a[i] += a[i - 1];
     
-	while(q--){
-		int d;
-		cin >> d;
-		if (d == 1) cin >> d, a[n + 1] = d + a[n], n++;
-		else if (d == 2) a[n--] = 0;
-		else {
-			int l, r;
-			cin >> l >> r;
-			cout << a[r] - a[l - 1] << endl; 
-		}
+    while(q--){
+	int d;
+	cin >> d;
+	if (d == 1) cin >> d, a[n + 1] = d + a[n], n++;
+	else if (d == 2) a[n--] = 0;
+	else {
+        	int l, r;
+		cin >> l >> r;
+		cout << a[r] - a[l - 1] << endl; 
 	}
+    }
 }
 
 int main()
