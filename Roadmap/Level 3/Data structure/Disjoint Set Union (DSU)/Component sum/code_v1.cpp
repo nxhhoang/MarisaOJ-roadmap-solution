@@ -1,0 +1,61 @@
+// nxxhoang - the dreamer
+#include <bits/stdc++.h>
+#define FOR(i, a, b) for (int i = a; i < (int)b; i++)
+#define endl '\n'
+#define ub upper_bound // find X < min(x)
+#define lb lower_bound // find X <= min(x)
+
+#define all(a) (a).begin(), (a).end()
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define vi vector<int>
+using namespace std;
+using ll = long long;
+using ull = unsigned long long;
+
+const ll inf = 2e18;
+const int NN = 10;
+const int MAXSIZE = 2e5 + 5;
+const int MAXN = 1e6 + 1;
+const int MOD = 1e9 + 7;
+const int dx[] = {1, -1, 0, 0};
+const int dy[] = {0, 0, 1, -1};
+
+void solve()
+{
+    int n, q;
+    cin >> n >> q;
+
+    vector<vi> vec(n + 1);
+    vector<int> st(n + 1, 0);
+    vector<int> tong(n + 1, 0);
+    FOR(i, 1, n + 1) vec[i].push_back(i), st[i] = i, tong[i] = i;
+
+    while(q--){
+        int t, u, v;
+        cin >> t >> u;
+        if (t == 1) {
+            cin >> v;
+            int a = st[u];
+            int b = st[v];
+            if (a != b) {
+                int mi, ma;
+                if (vec[a].size() < vec[b].size()) mi = a, ma = b;
+                else mi = b, ma = a;
+                for (auto it = vec[mi].begin(); it != vec[mi].end(); ++it) 
+                    vec[ma].push_back(*it), st[*it] = ma, tong[ma] += *it;
+                vec[mi].clear();
+                tong[mi] = 0;
+            }
+        } else cout << tong[st[u]] << endl;
+    }
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    solve();
+    return 0;
+}
