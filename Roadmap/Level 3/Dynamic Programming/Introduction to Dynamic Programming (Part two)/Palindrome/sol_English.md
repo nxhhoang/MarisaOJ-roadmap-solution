@@ -82,8 +82,7 @@ int main()
     cout.tie(NULL);
     int t = 1;
     // cin >> t;
-    while (t--)
-    {
+    while (t--){
         solve();
     }
     return 0;
@@ -157,8 +156,7 @@ int main()
     cout.tie(NULL);
     int t = 1;
     // cin >> t;
-    while (t--)
-    {
+    while (t--){
         solve();
     }
     return 0;
